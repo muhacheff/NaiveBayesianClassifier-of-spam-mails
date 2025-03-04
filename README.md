@@ -1,5 +1,5 @@
-# Naive Bayesian Classifier of spam mails
-## The code implements a simple letter classification system based on a Bayesian approach. 
+## Naive Bayesian Classifier of spam mails
+### The code implements a simple letter classification system based on a Bayesian approach. 
 
 ### Main description
 
