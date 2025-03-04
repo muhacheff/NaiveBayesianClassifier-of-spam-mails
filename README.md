@@ -1,14 +1,11 @@
 ## Naive Bayesian Classifier of spam mails
-### The code implements a simple mails classification system based on a Bayesian approach
 
 ### Main description
 
-The code implements a simple letter classification system based on a Bayesian approach. The main steps include:\
-
--Preprocessing of text (removing numbers, reducing to lowercase, lemmatization)\
--Training of the model by calculating the frequencies of words in two categories ("spam" and "ham")\
--Classification of new letters based on calculated probabilities\
-
+The code implements a simple mails classification system based on a Bayesian approach. The main steps include:\
+- Preprocessing of text (removing numbers, reducing to lowercase, lemmatization)\
+- Training of the model by calculating the frequencies of words in two categories ("spam" and "ham")\
+- Classification of new letters based on calculated probabilities\
 This code can serve as the basis for more complex text analysis systems
 
 ### List of used libraries
