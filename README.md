@@ -33,7 +33,7 @@ nltk.download('punkt')
 ```
 3) Using the classifier
 ```python
-from Task_SPAM import *
+from nbc_of_spam import *
 training_set = train_machine("testdata", "testdata_ready")
 check_mail('Hello!!!', training_set) 
 # The check_mail function returns the evaluation result ('SPAM' or 'HAM')
