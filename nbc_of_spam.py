@@ -7,7 +7,7 @@ from nltk.corpus import stopwords
 import os.path
 
 
-lemma_dict = WordNetLemmatizer() #---Lemmatizer for word normalization
+lemma_dict = WordNetLemmatizer()
 stop_words_dict = set(stopwords.words('english')).union({'.', ','})
 
 
@@ -58,7 +58,7 @@ def calculate_probability(mail, table, total_spam, total_ham, help_parameter=Fal
     return [probability_spam, probability_ham]
 
 
-def train_machine(name_raw_data, name_ready_file): ###---Training the classifier
+def training_machine(name_raw_data, name_ready_file):    ###---Training the classifier
     if os.path.exists(str(name_ready_file)+'.csv'): #---Checking for a ready-made file with trained data
         csv_df = pd.read_csv(str(name_ready_file)+'.csv', index_col=0)
         first_column_name = csv_df.index.name
@@ -80,7 +80,7 @@ def train_machine(name_raw_data, name_ready_file): ###---Training the classifier
     return [table_words, total] #---Forming training set for function check_mail
 
 
-def check_mail(mail, training_set, help_parameter=False):
+def check_mail(mail, training_set, help_parameter=False):    ###---Checking a message for spam, you need to have a list returned by the training_machine function to work
     table = training_set[0]
     total = training_set[1]
     check_probability = calculate_probability(transform_mail(mail), table, total[0], total[1], help_parameter)
