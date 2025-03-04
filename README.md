@@ -6,8 +6,6 @@ The code implements a simple mails classification system based on a Bayesian app
 - Training of the model by calculating the frequencies of words in two categories ("spam" and "ham")\
 - Classification of new letters based on calculated probabilities\
 
-This code can serve as the basis for more complex text analysis systems
-
 ### List of used libraries
 
 - math, os.path, re
@@ -41,7 +39,7 @@ check_mail('Hello!!!', training_set)
 # The check_mail function returns the evaluation result ('SPAM' or 'HAM')
 ```
 
-### Mecessary links
+### Necessary links
 https://www.kaggle.com/datasets/abdallahwagih/spam-emails --- testdata download link
 
 
