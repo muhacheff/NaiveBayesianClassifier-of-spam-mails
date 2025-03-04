@@ -87,4 +87,4 @@ def check_mail(mail, training_set, help_parameter=False):
     verdict = 'HAM'
     if check_probability[0] >= check_probability[1]:
         verdict = 'SPAM'
-    return [verdict, check_probability]
+    return verdict
