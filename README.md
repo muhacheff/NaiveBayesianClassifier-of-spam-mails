@@ -9,7 +9,7 @@ The code implements a simple mails classification system based on a Bayesian app
 ### List of used libraries
 
 - math, os.path, re
-- pandss
+- pandas
 - nltk
 
 ### Installation and launch
